@@ -8,14 +8,15 @@
   text-align: center;
 }
 .container {
-  width: 1232px;
+  max-width: 1232px;
   margin: 0 auto;
   padding: 120px 0px;
   width: 100%;
 }
 .title {
   color: #383838;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   font-size: 40px;
   margin-bottom: 20px;
 }
@@ -47,15 +48,16 @@
 }
 .text {
   color: #383838;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 24px;
   line-height: 28px;
 }
 .footer {
+  margin: 0 auto;
   background: #10367c;
   padding: 120px 272px 200px 104px;
   width: 1440px;
-  box-sizing: border-box;
+  color: #ffffff;
 }
 .contacts {
   display: flex;
@@ -63,11 +65,13 @@
   padding-bottom: 64px;
   justify-content: space-between;
 }
-.items {
+.columns {
   list-style-type: none;
   font-size: 20px;
-  line-height: 23px;
-  text-align: left;
+  line-height: 24px;
+}
+li {
+  margin-bottom: 24px;
 }
 .first-item {
   font-family: "Roboto", sans-serif;
@@ -76,9 +80,11 @@
 .second-items {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  margin-bottom: 24px;
 }
+
 .signature {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  size: 14px;
+  font-size: 14px;
 }
