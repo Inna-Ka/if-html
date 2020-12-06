@@ -1,3 +1,4 @@
+@import url("./fonts.css");
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +8,7 @@
   text-align: center;
 }
 .container {
-  max-width: 1232px;
+  width: 1232px;
   margin: 0 auto;
   padding: 120px 0px;
   width: 100%;
@@ -49,4 +50,35 @@
   font-family: Arial, sans-serif;
   font-size: 24px;
   line-height: 28px;
+}
+.footer {
+  background: #10367c;
+  padding: 120px 272px 200px 104px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+.contacts {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  justify-content: space-between;
+}
+.items {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+}
+.first-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.second-items {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.signature {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  size: 14px;
 }
