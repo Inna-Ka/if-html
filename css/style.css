@@ -1,36 +1,97 @@
-.container {
-  width: 1440px;
-  height: 569px;
+@import url("./fonts.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-h3 {
-  color: #383838;
+.center {
   text-align: center;
-  font-family: Arial, sans-serif;
-  font-size: 40px;
-  margin-bottom: 0;
 }
-hr {
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 120px 0px;
+  width: 100%;
+}
+.title {
+  color: #383838;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.underline {
   border: #f5bd41;
   background-color: #f5bd41;
-  height: 3px;
-  width: 9%;
+  height: 4px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.offers-list {
+  display: flex;
+}
+.item {
+  width: 25%;
   text-align: center;
 }
 .box {
-  width: 1232px;
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-  padding-left: 100px;
-  padding-right: 100px;
-}
-.image {
   width: 100%;
   height: 100px;
-  display: inline;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
 }
 .text {
   color: #383838;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+.footer {
+  margin: 0 auto;
+  background: #10367c;
+  padding: 120px 272px 200px 104px;
+  width: 1440px;
+  color: #ffffff;
+}
+.contacts {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 64px;
+  justify-content: space-between;
+}
+.columns {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 24px;
+}
+li {
+  margin-bottom: 24px;
+}
+.first-item {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+a.link {
+  color: white;
+  text-decoration: none;
+}
+a.link:hover {
+  color: rebeccapurple;
+}
+.second-items {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.signature {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
