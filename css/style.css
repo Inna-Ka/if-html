@@ -7,6 +7,88 @@
 .center {
   text-align: center;
 }
+.options {
+  background-image: url(../images/mountains.jpg);
+  width: 1440px;
+  height: 900px;
+  margin: 0px auto;
+  background-position: center top;
+}
+.top {
+  padding-top: 57px;
+  padding-bottom: 12px;
+  display: flex;
+  max-width: 1232px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+.sprite {
+  background-image: url(/images/group.png);
+  background-repeat: no-repeat;
+}
+.trip {
+  width: 215px;
+  height: 40px;
+  background-position: -305px 1px;
+}
+.text1 {
+  display: flex;
+  align-items: center;
+}
+.text-top {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+}
+.night {
+  width: 40px;
+  height: 40px;
+  background-position: -524px 1px;
+}
+.account {
+  width: 60px;
+  height: 42px;
+  background-position: -587px 1px;
+}
+.underline1 {
+  background-color: rgb(245, 189, 65);
+  height: 4px;
+  width: 50px;
+  margin-left: 998px;
+  margin-bottom: 196px;
+  border-width: initial;
+  border-style: initial;
+  border-color: rgb(245, 189, 65);
+  border-image: initial;
+}
+.text-option {
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  text-align: left;
+  padding-left: 104px;
+  padding-bottom: 100px;
+}
+.bottom {
+  padding-top: 120px;
+  padding-left: 585px;
+  display: flex;
+}
+.google {
+  width: 135px;
+  height: 40px;
+}
+.app {
+  width: 150px;
+  height: 40px;
+  background-position: -152px 1px;
+}
+
 .container {
   max-width: 1232px;
   margin: 0 auto;
