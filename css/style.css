@@ -24,7 +24,7 @@
   margin: 0px auto;
 }
 .sprite {
-  background-image: url(/images/group.png);
+  background-image: url(../images/group.png);
   background-repeat: no-repeat;
 }
 .trip {
