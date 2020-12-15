@@ -99,6 +99,8 @@
   width: 130px;
   height: 64px;
   display: flex;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
 }
 .family {
   width: 314px;
