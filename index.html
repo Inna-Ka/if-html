@@ -12,6 +12,68 @@
     />
   </head>
   <body>
+    <div class="options">
+      <div class="top">
+        <div class="sprite trip"></div>
+        <div class="text1">
+          <div class="text-top">
+            <a href="#" class="link">Stays </a> &ensp;
+            <a href="#" class="link"> Attractions &ensp; </a>
+          </div>
+          <div class="sprite night"></div>
+          <div class="sprite account"></div>
+        </div>
+      </div>
+      <hr class="underline1" />
+      <div class="text-option">
+        Discover stays <br />
+        to live, work or just relax
+      </div>
+      <div class="text-middle">
+        <div class="t1">Your destination or hotel name</div>
+        <div class="t2">Check-in — Check-out</div>
+      </div>
+
+      <form action="/" method="get">
+        <div class="search-box">
+          <div>
+            <input type="search" placeholder="New York" class="destination" />
+          </div>
+          <div class="date">
+            <input
+              type="date"
+              name="trip-start"
+              value="start"
+              min="2021-01-01"
+              max="2022-12-31"
+            />
+          </div>
+          <div class="date">
+            <input
+              type="date"
+              name="trip-finish"
+              value="finish"
+              min="2021-01-01"
+              max="2022-12-31"
+            />
+          </div>
+          <div>
+            <input
+              type="search"
+              placeholder="2 Adults — 0 Children — 1 Room"
+              class="family"
+            />
+          </div>
+          <div>
+            <input type="submit" value="Search" class="button" />
+          </div>
+        </div>
+      </form>
+      <div class="bottom">
+        <div class="sprite google"></div>
+        <div class="sprite app"></div>
+      </div>
+    </div>
     <div class="offers">
       <div class="container">
         <h2 class="title center">What do we offer</h2>
