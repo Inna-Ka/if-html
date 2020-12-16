@@ -13,65 +13,67 @@
   </head>
   <body>
     <div class="options">
-      <div class="top">
-        <div class="sprite trip"></div>
-        <div class="text1">
-          <div class="text-top">
-            <a href="#" class="link">Stays </a> &ensp;
-            <a href="#" class="link"> Attractions &ensp; </a>
+      <div class="option1">
+        <div class="top">
+          <div class="sprite trip"></div>
+          <div class="text1">
+            <div class="text-top">
+              <a href="#" class="link">Stays </a> &ensp;
+              <a href="#" class="link"> Attractions &ensp; </a>
+            </div>
+            <div class="sprite night"></div>
+            <div class="sprite account"></div>
           </div>
-          <div class="sprite night"></div>
-          <div class="sprite account"></div>
         </div>
-      </div>
-      <hr class="underline1" />
-      <div class="text-option">
-        Discover stays <br />
-        to live, work or just relax
-      </div>
-      <div class="text-middle">
-        <div class="t1">Your destination or hotel name</div>
-        <div class="t2">Check-in — Check-out</div>
-      </div>
+        <hr class="underline1" />
+        <div class="text-option">
+          Discover stays <br />
+          to live, work or just relax
+        </div>
+        <div class="text-middle">
+          <div class="t1">Your destination or hotel name</div>
+          <div class="t2">Check-in — Check-out</div>
+        </div>
 
-      <form action="/" method="get">
-        <div class="search-box">
-          <div>
-            <input type="search" placeholder="New York" class="destination" />
+        <form action="/" method="get">
+          <div class="search-box">
+            <div>
+              <input type="search" placeholder="New York" class="destination" />
+            </div>
+            <div class="date">
+              <input
+                type="date"
+                name="trip-start"
+                value="start"
+                min="2021-01-01"
+                max="2022-12-31"
+              />
+            </div>
+            <div class="date">
+              <input
+                type="date"
+                name="trip-finish"
+                value="finish"
+                min="2021-01-01"
+                max="2022-12-31"
+              />
+            </div>
+            <div>
+              <input
+                type="search"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                class="family"
+              />
+            </div>
+            <div>
+              <input type="submit" value="Search" class="button" />
+            </div>
           </div>
-          <div class="date">
-            <input
-              type="date"
-              name="trip-start"
-              value="start"
-              min="2021-01-01"
-              max="2022-12-31"
-            />
-          </div>
-          <div class="date">
-            <input
-              type="date"
-              name="trip-finish"
-              value="finish"
-              min="2021-01-01"
-              max="2022-12-31"
-            />
-          </div>
-          <div>
-            <input
-              type="search"
-              placeholder="2 Adults — 0 Children — 1 Room"
-              class="family"
-            />
-          </div>
-          <div>
-            <input type="submit" value="Search" class="button" />
-          </div>
+        </form>
+        <div class="bottom">
+          <div class="sprite google"></div>
+          <div class="sprite app"></div>
         </div>
-      </form>
-      <div class="bottom">
-        <div class="sprite google"></div>
-        <div class="sprite app"></div>
       </div>
     </div>
     <div class="offers">
@@ -107,43 +109,45 @@
       </div>
     </div>
     <div class="footer">
-      <div class="contacts">
-        <div class="About">
-          <ul class="columns">
-            <li class="first-item">About</li>
-            <div class="second-items">
-              <li><a href="#" class="link">How Triphouse works</a></li>
-              <li><a href="#" class="link">Careers</a></li>
-              <li><a href="#" class="link">Privacy</a></li>
-              <li><a href="#" class="link">Terms</a></li>
-            </div>
-          </ul>
+      <div class="footer1">
+        <div class="contacts">
+          <div class="About">
+            <ul class="columns">
+              <li class="first-item">About</li>
+              <div class="second-items">
+                <li><a href="#" class="link">How Triphouse works</a></li>
+                <li><a href="#" class="link">Careers</a></li>
+                <li><a href="#" class="link">Privacy</a></li>
+                <li><a href="#" class="link">Terms</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="Property types">
+            <ul class="columns">
+              <li class="first-item">Property types</li>
+              <div class="second-items">
+                <li><a href="#" class="link">Guest houses</a></li>
+                <li><a href="#" class="link">Hotels</a></li>
+                <li><a href="#" class="link">Apartments</a></li>
+                <li><a href="#" class="link">Villas</a></li>
+                <li><a href="#" class="link">Holiday homes</a></li>
+                <li><a href="#" class="link">Hostels</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="Support">
+            <ul class="columns">
+              <li class="first-item">Support</li>
+              <div class="second-items">
+                <li><a href="#" class="link">Contact Customer Service</a></li>
+                <li><a href="#" class="link">FAQ</a></li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="Property types">
-          <ul class="columns">
-            <li class="first-item">Property types</li>
-            <div class="second-items">
-              <li><a href="#" class="link">Guest houses</a></li>
-              <li><a href="#" class="link">Hotels</a></li>
-              <li><a href="#" class="link">Apartments</a></li>
-              <li><a href="#" class="link">Villas</a></li>
-              <li><a href="#" class="link">Holiday homes</a></li>
-              <li><a href="#" class="link">Hostels</a></li>
-            </div>
-          </ul>
+        <div class="signature">
+          &copy; 2020 Triphouse, Inc. All rights reserved
         </div>
-        <div class="Support">
-          <ul class="columns">
-            <li class="first-item">Support</li>
-            <div class="second-items">
-              <li><a href="#" class="link">Contact Customer Service</a></li>
-              <li><a href="#" class="link">FAQ</a></li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div class="signature">
-        &copy; 2020 Triphouse, Inc. All rights reserved
       </div>
     </div>
   </body>
