@@ -12,138 +12,191 @@
     />
   </head>
   <body>
-    <div class="options">
-      <div class="top">
-        <div class="sprite trip"></div>
-        <div class="text1">
-          <div class="text-top">
-            <a href="#" class="link">Stays </a> &ensp;
-            <a href="#" class="link"> Attractions &ensp; </a>
-          </div>
-          <div class="sprite night"></div>
-          <div class="sprite account"></div>
-        </div>
-      </div>
-      <hr class="underline1" />
-      <div class="text-option">
-        Discover stays <br />
-        to live, work or just relax
-      </div>
-      <div class="text-middle">
-        <div class="t1">Your destination or hotel name</div>
-        <div class="t2">Check-in — Check-out</div>
-      </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
+      <symbol id="night" viewBox="0 0 30 30">
+        <path
+          d="M25.61 10.61V4.39h-6.22L15 0l-4.39 4.39H4.39v6.22L0 15l4.39 4.39v6.22h6.22L15 30l4.39-4.39h6.22v-6.22L30 15l-4.39-4.39zM15 22.958a7.924 7.924 0 01-3.316-.73c2.732-1.26 4.642-4.018 4.642-7.228s-1.91-5.968-4.642-7.228A7.924 7.924 0 0115 7.042c4.39 0 7.958 3.568 7.958 7.958 0 4.39-3.568 7.958-7.958 7.958z"
+        />
+      </symbol>
+      <symbol id="account" viewBox="0 0 40 40">
+        <path
+          d="M20 0C8.96 0 0 8.96 0 20s8.96 20 20 20 20-8.96 20-20S31.04 0 20 0zm0 6c3.32 0 6 2.68 6 6s-2.68 6-6 6-6-2.68-6-6 2.68-6 6-6zm0 28.4c-5 0-9.42-2.56-12-6.44.06-3.98 8-6.16 12-6.16 3.98 0 11.94 2.18 12 6.16-2.58 3.88-7 6.44-12 6.44z"
+        />
+      </symbol>
 
-      <form action="/" method="get">
-        <div class="search-box">
-          <div>
-            <input type="search" placeholder="New York" class="destination" />
-          </div>
-          <div class="date">
-            <input
-              type="date"
-              name="trip-start"
-              value="start"
-              min="2021-01-01"
-              max="2022-12-31"
-            />
-          </div>
-          <div class="date">
-            <input
-              type="date"
-              name="trip-finish"
-              value="finish"
-              min="2021-01-01"
-              max="2022-12-31"
-            />
-          </div>
-          <div>
-            <input
-              type="search"
-              placeholder="2 Adults — 0 Children — 1 Room"
-              class="family"
-            />
-          </div>
-          <div>
-            <input type="submit" value="Search" class="button" />
+      <symbol id="support" viewBox="0 0 76 92">
+        <path
+          d="M67.167 54.333V71h-8.334V54.333h8.334zm-50 0V71H13a4.179 4.179 0 01-4.167-4.167v-12.5h8.334zM38 .167C17.292.167.5 16.958.5 37.667v29.166c0 6.917 5.583 12.5 12.5 12.5h12.5V46H8.833v-8.333C8.833 21.542 21.875 8.5 38 8.5s29.167 13.042 29.167 29.167V46H50.5v33.333h16.667V83.5H38v8.333h25c6.917 0 12.5-5.583 12.5-12.5V37.667c0-20.709-16.792-37.5-37.5-37.5z"
+        />
+      </symbol>
+      <symbol id="message" viewBox="0 0 84 84">
+        <path
+          d="M54.5 8.667v29.166H13.542l-4.875 4.875V8.667H54.5zM58.667.333H4.5A4.179 4.179 0 00.333 4.5v58.333L17 46.167h41.667A4.179 4.179 0 0062.833 42V4.5A4.179 4.179 0 0058.667.333zM79.5 17h-8.333v37.5H17v8.333A4.179 4.179 0 0021.167 67H67l16.667 16.667v-62.5A4.179 4.179 0 0079.5 17z"
+        />
+      </symbol>
+      <symbol id="bookonline" viewBox="0 0 100 67">
+        <path
+          d="M16.667 9h75V.667h-75C12.083.667 8.333 4.417 8.333 9v45.833H0v12.5h58.333v-12.5H16.667V9zm79.166 8.333h-25a4.179 4.179 0 00-4.166 4.167v41.667a4.179 4.179 0 004.166 4.166h25A4.179 4.179 0 00100 63.167V21.5a4.179 4.179 0 00-4.167-4.167zm-4.166 37.5H75V25.667h16.667v29.166z"
+        />
+      </symbol>
+      <symbol id="like" viewBox="0 0 92 84">
+        <path
+          d="M83.5 29.333H57.208l3.959-19.041.125-1.334a6.272 6.272 0 00-1.834-4.416L55.042.167 27.625 27.625a8.147 8.147 0 00-2.458 5.875v41.667c0 4.583 3.75 8.333 8.333 8.333H71a8.277 8.277 0 007.667-5.083L91.25 49.042A8.232 8.232 0 0091.833 46v-8.333c0-4.584-3.75-8.334-8.333-8.334zM83.5 46L71 75.167H33.5V33.5l18.083-18.083-4.625 22.25H83.5V46zM.167 33.5h16.666v50H.167v-50z"
+        />
+      </symbol>
+    </svg>
+
+    <div class="options">
+      <div class="option1">
+        <div class="top">
+          <div class="sprite trip"></div>
+          <div class="text1">
+            <div class="text-top">
+              <a href="#" class="link withline">Stays </a> &ensp;
+            </div>
+            <div class="text-top">
+              <a href="#" class="link"> Attractions &ensp; </a>
+            </div>
+            <div>
+              <svg class="icon-night"><use href="#night" /></svg>
+            </div>
+            <div>
+              <svg class="icon-account"><use href="#account" /></svg> /div>
+            </div>
           </div>
         </div>
-      </form>
-      <div class="bottom">
-        <div class="sprite google"></div>
-        <div class="sprite app"></div>
+
+        <div class="text-option">
+          Discover stays <br />
+          to live, work or just relax
+        </div>
+        <div class="text-middle">
+          <div class="t1">Your destination or hotel name</div>
+          <div class="t2">Check-in — Check-out</div>
+        </div>
+        <form action="/" method="get">
+          <div class="search-box">
+            <div>
+              <input type="search" placeholder="New York" class="destination" />
+            </div>
+            <div class="date">
+              <input
+                type="date"
+                name="trip-start"
+                value="start"
+                min="2021-01-01"
+                max="2022-12-31"
+              />
+            </div>
+            <div class="date">
+              <input
+                type="date"
+                name="trip-finish"
+                value="finish"
+                min="2021-01-01"
+                max="2022-12-31"
+              />
+            </div>
+            <div>
+              <input
+                type="search"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                class="family"
+              />
+            </div>
+            <div>
+              <input type="submit" value="Search" class="button" />
+            </div>
+          </div>
+        </form>
+        <div class="bottom">
+          <div class="sprite google"></div>
+          <div class="sprite app"></div>
+        </div>
       </div>
     </div>
+
     <div class="offers">
       <div class="container">
         <h2 class="title center">What do we offer</h2>
         <hr class="underline" />
         <div class="offers-list">
-          <div class="item">
+          <div class="item col-s-6">
             <div class="box">
-              <img src="./images/support.svg" alt="support" class="image" />
+              <svg class="icon">
+                <use href="#support" />
+              </svg>
             </div>
             <span class="text">Support 24/7</span>
           </div>
-          <div class="item">
+          <div class="item col-s-6">
             <div class="box">
-              <img src="./images/message.svg" alt="message" class="image" />
+              <svg class="icon">
+                <use href="#message" />
+              </svg>
             </div>
             <span class="text">Communicate directly</span>
           </div>
-          <div class="item">
+          <div class="item col-s-6">
             <div class="box">
-              <img src="./images/book.svg" alt="book" class="image" />
+              <svg class="icon">
+                <use href="#bookonline" />
+              </svg>
             </div>
             <span class="text">Book online</span>
           </div>
-          <div class="item">
+          <div class="item col-s-6">
             <div class="box">
-              <img src="./images/review.svg" alt="review" class="image" />
+              <svg class="icon">
+                <use href="#like" />
+              </svg>
             </div>
             <span class="text">Real guest reviews</span>
           </div>
         </div>
       </div>
     </div>
+
     <div class="footer">
-      <div class="contacts">
-        <div class="About">
-          <ul class="columns">
-            <li class="first-item">About</li>
-            <div class="second-items">
-              <li><a href="#" class="link">How Triphouse works</a></li>
-              <li><a href="#" class="link">Careers</a></li>
-              <li><a href="#" class="link">Privacy</a></li>
-              <li><a href="#" class="link">Terms</a></li>
-            </div>
-          </ul>
+      <div class="footer1">
+        <div class="contacts">
+          <div class="About col-s-4">
+            <ul class="columns">
+              <li class="first-item">About</li>
+              <div class="second-items">
+                <li><a href="#" class="link">How Triphouse works</a></li>
+                <li><a href="#" class="link">Careers</a></li>
+                <li><a href="#" class="link">Privacy</a></li>
+                <li><a href="#" class="link">Terms</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="Property types col-s-4">
+            <ul class="columns">
+              <li class="first-item">Property types</li>
+              <div class="second-items">
+                <li><a href="#" class="link">Guest houses</a></li>
+                <li><a href="#" class="link">Hotels</a></li>
+                <li><a href="#" class="link">Apartments</a></li>
+                <li><a href="#" class="link">Villas</a></li>
+                <li><a href="#" class="link">Holiday homes</a></li>
+                <li><a href="#" class="link">Hostels</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="Support col-s-4">
+            <ul class="columns">
+              <li class="first-item">Support</li>
+              <div class="second-items">
+                <li><a href="#" class="link">Contact Customer Service</a></li>
+                <li><a href="#" class="link">FAQ</a></li>
+              </div>
+            </ul>
+          </div>
         </div>
-        <div class="Property types">
-          <ul class="columns">
-            <li class="first-item">Property types</li>
-            <div class="second-items">
-              <li><a href="#" class="link">Guest houses</a></li>
-              <li><a href="#" class="link">Hotels</a></li>
-              <li><a href="#" class="link">Apartments</a></li>
-              <li><a href="#" class="link">Villas</a></li>
-              <li><a href="#" class="link">Holiday homes</a></li>
-              <li><a href="#" class="link">Hostels</a></li>
-            </div>
-          </ul>
+        <div class="signature">
+          &copy; 2020 Triphouse, Inc. All rights reserved
         </div>
-        <div class="Support">
-          <ul class="columns">
-            <li class="first-item">Support</li>
-            <div class="second-items">
-              <li><a href="#" class="link">Contact Customer Service</a></li>
-              <li><a href="#" class="link">FAQ</a></li>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <div class="signature">
-        &copy; 2020 Triphouse, Inc. All rights reserved
       </div>
     </div>
   </body>

@@ -4,38 +4,56 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.svg-sprite {
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .center {
   text-align: center;
 }
+
 .options {
   background-image: url(../images/mountains.jpg);
-  width: 1440px;
-  height: 900px;
-  margin: 0px auto;
+  width: 100%;
+  height: 100%;
   background-position: center top;
+  background-repeat: no-repeat;
 }
+
+.option1 {
+  max-width: 1232px;
+  margin: 0px auto;
+}
+
 .top {
   padding-top: 57px;
-
+  padding-bottom: 196px;
   display: flex;
-  max-width: 1232px;
   align-items: center;
   justify-content: space-between;
   margin: 0px auto;
 }
+
 .sprite {
   background-image: url(../images/group.png);
   background-repeat: no-repeat;
 }
+
 .trip {
   width: 215px;
   height: 40px;
   background-position: -305px 1px;
 }
+
 .text1 {
   display: flex;
   align-items: center;
 }
+
 .text-top {
   color: white;
   font-family: Roboto, sans-serif;
@@ -43,27 +61,27 @@
   font-size: 24px;
   line-height: 28px;
 }
-.night {
-  width: 40px;
-  height: 40px;
-  background-position: -524px 1px;
-}
-.account {
-  width: 80px;
-  height: 42px;
-  background-position: -569px 1px;
-}
-.underline1 {
-  background-color: rgb(245, 189, 65);
+
+a.withline::after {
+  display: block;
+  content: "";
   height: 4px;
   width: 50px;
-  margin-left: 998px;
-  margin-bottom: 196px;
-  border-width: initial;
-  border-style: initial;
-  border-color: rgb(245, 189, 65);
-  border-image: initial;
+  background-color: rgb(245, 189, 65);
 }
+
+.icon-night {
+  width: 30px;
+  height: 30px;
+  fill: #ffffff;
+}
+
+.icon-account {
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+}
+
 .text-option {
   color: white;
   font-family: Roboto, sans-serif;
@@ -71,11 +89,10 @@
   font-size: 50px;
   line-height: 59px;
   text-align: left;
-  padding-left: 104px;
   padding-bottom: 100px;
 }
+
 .text-middle {
-  padding-left: 128px;
   padding-bottom: 24px;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -84,39 +101,56 @@
   line-height: 21px;
   display: flex;
   justify-content: space-between;
-  width: 768px;
+  width: 640px;
 }
+
 .search-box {
   display: flex;
-  padding-left: 104px;
 }
 
 .destination {
   width: 447px;
   height: 64px;
+  border-radius: 8px;
+  padding-left: 24px;
 }
+
 .date {
   width: 130px;
   height: 64px;
   display: flex;
   border: 3px solid #f5bd41;
   border-radius: 8px;
+
+  box-sizing: border-box;
 }
+
 .family {
   width: 314px;
   height: 64px;
+  border-radius: 8px;
+  padding-left: 24px;
 }
+
 .button {
   width: 192px;
   height: 64px;
   background: #3077c6;
   border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: white;
+  line-height: 28px;
 }
+
 .bottom {
   padding-top: 120px;
-  padding-left: 585px;
+  padding-left: 481px;
+  padding-bottom: 120px;
   display: flex;
 }
+
 .google {
   width: 135px;
   height: 40px;
@@ -152,19 +186,26 @@
 
 .offers-list {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .item {
   width: 25%;
   text-align: center;
 }
+
 .box {
-  width: 100%;
-  height: 100px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 48px;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  fill: #3077c6;
 }
 .text {
   color: #383838;
@@ -172,27 +213,37 @@
   font-size: 24px;
   line-height: 28px;
 }
+
 .footer {
-  margin: 0 auto;
   background: #10367c;
-  padding: 120px 272px 200px 104px;
-  width: 1440px;
+}
+
+.footer1 {
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 104px;
+  padding-right: 168px;
+  max-width: 1232px;
   color: #ffffff;
 }
+
 .contacts {
   display: flex;
   margin: 0 auto;
   padding-bottom: 64px;
   justify-content: space-between;
 }
+
 .columns {
   list-style-type: none;
   font-size: 20px;
   line-height: 24px;
 }
+
 li {
   margin-bottom: 24px;
 }
+
 .first-item {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -201,9 +252,11 @@ a.link {
   color: white;
   text-decoration: none;
 }
+
 a.link:hover {
   color: rebeccapurple;
 }
+
 .second-items {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -214,4 +267,55 @@ a.link:hover {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer1 {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 104px;
+    padding-right: 20px;
+  }
+  .item {
+    padding-bottom: 30px;
+  }
+  .container {
+    padding: 80px 0;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
 }
