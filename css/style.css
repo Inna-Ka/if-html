@@ -1,6 +1,7 @@
 @import url("./fonts.css");
 * {
   padding: 0;
+
   margin: 0;
   box-sizing: border-box;
 }
@@ -25,6 +26,7 @@
 }
 
 .option1 {
+  padding-left: 16px;
   max-width: 1232px;
   margin: 0px auto;
 }
@@ -43,10 +45,10 @@
   background-repeat: no-repeat;
 }
 
-.trip {
-  width: 215px;
+.triphouse {
+  width: 205px;
   height: 40px;
-  background-position: -305px 1px;
+  fill: #3077c6;
 }
 
 .text1 {
@@ -81,6 +83,13 @@ a.withline::after {
   width: 40px;
   height: 40px;
   fill: #ffffff;
+}
+.icon-menu {
+  display: none;
+}
+
+.dropdown-child {
+  display: none;
 }
 
 .text-option {
@@ -225,10 +234,14 @@ a.withline::after {
   padding-top: 120px;
   padding-bottom: 104px;
   padding-right: 168px;
+  padding-left: 16px;
   max-width: 1232px;
   color: #ffffff;
 }
 
+.triphouse__footer {
+  display: none;
+}
 .contacts {
   display: flex;
   margin: 0 auto;
@@ -330,7 +343,7 @@ a.link:hover {
     padding-top: 12px;
     padding-bottom: 59px;
   }
-  .trip {
+  .triphouse {
     width: 122px;
     height: 24px;
   }
@@ -346,6 +359,25 @@ a.link:hover {
   .icon-account {
     width: 24px;
     height: 24px;
+  }
+  .icon-menu {
+    display: inline-flex;
+    margin-left: 16px;
+    width: 24px;
+    height: 16px;
+    fill: white;
+  }
+  .dropdown {
+    display: inline-block;
+  }
+
+  .dropdown-child a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-child {
+    display: block;
   }
   .text-option {
     font-size: 30px;
@@ -437,12 +469,25 @@ a.link:hover {
     font-size: 15px;
     line-height: 18px;
   }
+  .footer1 {
+    padding-bottom: 0;
+  }
   .contacts {
     padding-bottom: 32px;
+  }
+  .tripfoot {
+    display: flex;
+    justify-content: center;
+  }
+  .triphouse__footer {
+    fill: white;
+    display: flex;
+    margin-bottom: 40px;
   }
   .first-item {
     font-size: 15px;
     margin-bottom: 0px;
+    text-decoration: underline;
   }
   .second-items {
     display: none;
@@ -450,6 +495,7 @@ a.link:hover {
   .signature {
     font-size: 12px;
     text-align: center;
+    padding-bottom: 40px;
   }
   .col-s-1 {
     width: 8.33%;
