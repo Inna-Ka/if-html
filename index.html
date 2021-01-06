@@ -103,7 +103,7 @@
           <div class="t1">Your destination or hotel name</div>
           <div class="t2">Check-in — Check-out</div>
         </div>
-        <form action="/" method="get">
+        <form action="/" method="get" class="form">
           <div class="search-box col-s-12">
             <div>
               <input
@@ -119,6 +119,7 @@
                 value="start"
                 min="2021-01-01"
                 max="2022-12-31"
+                class="date_input"
               />
 
               <input
@@ -127,6 +128,7 @@
                 value="finish"
                 min="2021-01-01"
                 max="2022-12-31"
+                class="date_input"
               />
             </div>
             <div>
@@ -135,6 +137,29 @@
                 placeholder="2 Adults — 0 Children — 1 Room"
                 class="family col-s-12"
               />
+              <div class="familymobile">
+                <div>
+                  <input
+                    type="search"
+                    placeholder=" Adults 2"
+                    class="familyAdults"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="search"
+                    placeholder=" Children 0"
+                    class="familychildren"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="search"
+                    placeholder=" Rooms 1"
+                    class="familyroom"
+                  />
+                </div>
+              </div>
             </div>
             <div>
               <input type="submit" value="Search" class="button col-s-12" />
