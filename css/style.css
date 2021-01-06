@@ -125,6 +125,9 @@ a.withline::after {
   border-radius: 8px;
   padding-left: 24px;
 }
+.destinationmobile {
+  display: none;
+}
 
 .date {
   width: 260px;
@@ -393,6 +396,10 @@ a.link:hover {
     display: inline;
   }
   .destination {
+    display: none;
+  }
+  .destinationmobile {
+    display: inline;
     background-image: url(../images/lens.svg);
     background-repeat: no-repeat;
     background-position: 12px;
@@ -440,7 +447,7 @@ a.link:hover {
   .room {
     border-top: 4px solid #f5bd41;
     border-bottom: 4px solid #f5bd41;
-    border-right: 0px solid #f5bd41;
+    border-right: 4px solid #f5bd41;
   }
   .button {
     height: 48px;
