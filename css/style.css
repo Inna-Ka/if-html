@@ -420,30 +420,27 @@ a.link:hover {
   .familymobile {
     display: inline-flex;
   }
-  .familyAdults {
+  .choise {
     width: 104px;
     height: 48px;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+  .Adults {
     border-left: 4px solid #f5bd41;
     border-top: 4px solid #f5bd41;
     border-bottom: 4px solid #f5bd41;
-    box-sizing: border-box;
     border-right: 1px;
   }
-  .familychildren {
-    width: 106px;
-    height: 48px;
+  .children {
     border-top: 4px solid #f5bd41;
     border-bottom: 4px solid #f5bd41;
-    box-sizing: border-box;
     border-right: 1px;
   }
-  .familyroom {
-    width: 104px;
-    height: 48px;
+  .room {
     border-top: 4px solid #f5bd41;
     border-bottom: 4px solid #f5bd41;
     border-right: 0px solid #f5bd41;
-    box-sizing: border-box;
   }
   .button {
     height: 48px;
