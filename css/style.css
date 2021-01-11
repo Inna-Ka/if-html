@@ -135,7 +135,12 @@ a.withline::after {
   border: 3px solid #f5bd41;
   border-radius: 8px;
 }
-
+.startdate {
+  display: none;
+}
+.finishdate {
+  display: none;
+}
 .family {
   width: 314px;
   height: 64px;
@@ -236,7 +241,7 @@ a.withline::after {
   padding-top: 120px;
   padding-bottom: 104px;
   padding-right: 168px;
-  padding-left: 16px;
+  padding-left: 104px;
   max-width: 1232px;
   color: #ffffff;
 }
@@ -421,7 +426,32 @@ a.link:hover {
     width: 152px;
     padding-left: 8px;
   }
-
+  .startdate {
+    display: inline;
+    position: absolute;
+    top: 286px;
+    right: 202px;
+    width: 84px;
+    height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .finishdate {
+    display: inline;
+    position: absolute;
+    top: 286px;
+    right: 62px;
+    width: 84px;
+    height: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+  }
   .family {
     display: none;
   }
@@ -519,6 +549,9 @@ a.link:hover {
   }
   .second-items {
     display: none;
+  }
+  .footer1 {
+    padding-left: 16px;
   }
   .signature {
     font-size: 12px;
