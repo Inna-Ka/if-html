@@ -129,7 +129,7 @@ a.withline::after {
 .labeltext {
   position: absolute;
   pointer-events: none;
-  left: 116px;
+  left: 420px;
   top: 580px;
   font-family: "Roboto";
   font-weight: 400;
@@ -139,7 +139,7 @@ a.withline::after {
 input:focus ~ .labeltext,
 input:not(:focus):valid ~ .labeltext {
   top: 513px;
-  left: 125px;
+  left: 425px;
   font-size: 18px;
   opacity: 1;
   color: white;
@@ -424,6 +424,9 @@ a.link:hover {
     display: inline;
   }
   .destination {
+    display: none;
+  }
+  .labeltext {
     display: none;
   }
   .destinationmobile {
