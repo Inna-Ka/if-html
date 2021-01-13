@@ -100,17 +100,14 @@
           to live, work or just relax
         </div>
         <div class="text-middle">
-          <div class="t1">Your destination or hotel name</div>
+          <div class="t1"></div>
           <div class="t2">Check-in — Check-out</div>
         </div>
         <form action="/" method="get" class="form">
           <div class="search-box col-s-12">
             <div>
-              <input
-                type="search"
-                placeholder=" New York"
-                class="destination col-s-12"
-              />
+              <input type="text" class="destination col-s-12" required />
+              <span class="labeltext">Your destination or hotel name</span>
             </div>
             <div>
               <input
@@ -119,7 +116,7 @@
                 class="destinationmobile col-s-12"
               />
             </div>
-            <div data-visible="datesvacation" class="date col-s-12">
+            <div class="date col-s-12">
               <span class="startdate"> check-in </span>
               <input
                 type="date"
@@ -139,7 +136,6 @@
                 class="date_input"
               />
             </div>
-
             <div>
               <input
                 type="search"
