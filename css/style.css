@@ -134,7 +134,9 @@ a.withline::after {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
   transition: 0.2s ease all;
+  color: #383838;
 }
 input:focus ~ .labeltext,
 input:not(:focus):valid ~ .labeltext {
@@ -169,6 +171,8 @@ input:not(:focus):valid ~ .labeltext {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
+  line-height: 21px;
+  color: #383838;
 }
 .familymobile {
   display: none;
@@ -441,6 +445,7 @@ a.link:hover {
     border-radius: 8px;
     padding-left: 36px;
     border: 4px solid #f5bd41;
+    color: #383838;
   }
   .date {
     border: 0;
@@ -455,8 +460,8 @@ a.link:hover {
   .startdate {
     display: inline;
     position: absolute;
-    top: 251px;
-    right: 242px;
+    top: 248px;
+    right: 244px;
     width: 84px;
     height: 30px;
     font-family: Roboto;
@@ -464,11 +469,12 @@ a.link:hover {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+    color: #383838;
   }
   .finishdate {
     display: inline;
     position: absolute;
-    top: 251px;
+    top: 248px;
     right: 84px;
     width: 84px;
     height: 30px;
@@ -477,6 +483,7 @@ a.link:hover {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px;
+    color: #383838;
   }
   .family {
     display: none;
@@ -489,6 +496,12 @@ a.link:hover {
     height: 48px;
     box-sizing: border-box;
     padding: 8px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #383838;
   }
   .Adults {
     border-left: 4px solid #f5bd41;
@@ -578,6 +591,9 @@ a.link:hover {
   }
   .footer1 {
     padding-left: 16px;
+  }
+  .contacts {
+    text-align: center;
   }
   .signature {
     font-size: 12px;
