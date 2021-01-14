@@ -126,11 +126,14 @@ a.withline::after {
   padding-left: 24px;
   font-size: 18px;
 }
+.labelinput {
+  position: relative;
+}
 .labeltext {
   position: absolute;
   pointer-events: none;
-  left: 420px;
-  top: 580px;
+  left: 24px;
+  top: 23px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 18px;
@@ -140,8 +143,8 @@ a.withline::after {
 }
 input:focus ~ .labeltext,
 input:not(:focus):valid ~ .labeltext {
-  top: 513px;
-  left: 425px;
+  top: -46px;
+  left: 24px;
   font-size: 18px;
   opacity: 1;
   color: white;
@@ -449,6 +452,7 @@ a.link:hover {
   }
   .date {
     border: 0;
+    position: relative;
   }
   .date_input {
     border-radius: 8px;
@@ -460,8 +464,8 @@ a.link:hover {
   .startdate {
     display: inline;
     position: absolute;
-    top: 248px;
-    right: 244px;
+    top: 3px;
+    right: 223px;
     width: 84px;
     height: 30px;
     font-family: "Roboto";
@@ -474,8 +478,8 @@ a.link:hover {
   .finishdate {
     display: inline;
     position: absolute;
-    top: 248px;
-    right: 84px;
+    top: 3px;
+    right: 64px;
     width: 84px;
     height: 30px;
     font-family: "Roboto";
