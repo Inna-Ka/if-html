@@ -190,6 +190,7 @@ input:not(:focus):valid ~ .labeltext {
   font-size: 24px;
   color: white;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .bottom {
@@ -291,7 +292,31 @@ input:not(:focus):valid ~ .labeltext {
   color: #bfbfbf;
   padding-top: 24px;
 }
+.homesoffers_arrow {
+  display: flex;
+  justify-content: center;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  fill: #e5e5e5;
+  background: #f3f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: -35px;
+  position: absolute;
+  bottom: -895px;
+}
 
+.polygon {
+  fill: none;
+  width: 7px;
+  height: 19px;
+}
 .footer {
   background: #10367c;
 }
