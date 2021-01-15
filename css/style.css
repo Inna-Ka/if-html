@@ -62,14 +62,18 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  position: relative;
 }
 
-a.withline::after {
-  display: none;
+.withline:hover::after {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 33px;
   content: "";
-  height: 4px;
+  height: 2px;
   width: 50px;
-  background-color: rgb(245, 189, 65);
+  background-color: #f5bd41;
 }
 
 .icon-night {
@@ -215,23 +219,34 @@ input:not(:focus):valid ~ .labeltext {
   margin: 0 auto;
   padding: 120px 0px;
   width: 100%;
+  position: relative;
 }
 .title {
   color: #383838;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 108px;
+}
+.centerline:hover:after {
+  display: block;
+  position: absolute;
+  left: 570px;
+  top: 180px;
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: #f5bd41;
 }
 
-.underline {
+/* .underline {
   border: #f5bd41;
   background-color: #f5bd41;
   height: 4px;
   width: 100px;
   margin: 0 auto;
   margin-bottom: 80px;
-}
+} */
 
 .offers-list {
   display: flex;
