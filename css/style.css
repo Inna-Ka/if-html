@@ -229,7 +229,6 @@ input:not(:focus):valid ~ .labeltext {
   max-width: 1232px;
   margin: 0 auto;
   padding: 120px 0px;
-
   position: relative;
 }
 .title {
@@ -407,6 +406,64 @@ input:not(:focus):valid ~ .labeltext {
 }
 .best_destinations_polygon {
   transform: rotate(90deg);
+}
+.sign_up {
+  background-color: #eaf0f9;
+}
+.sign_up_settings {
+  padding: 51px 16px 52px 16px;
+  max-width: 1232px;
+  margin: 0px auto;
+}
+.sign_up_content {
+  display: flex;
+}
+.user_sign_up {
+  width: 86px;
+  height: 86px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  fill: #ffffff;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+.user {
+  fill: #3077c6;
+  height: 44px;
+}
+.text_sign_up {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #383838;
+  display: block;
+  padding-bottom: 21px;
+}
+.button_sign_up {
+  width: 128px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #3077c6;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077c6;
+}
+.button_close {
+  width: 26px;
+  height: 26px;
+
+  transform: rotate(45deg);
+  background: #bfbfbf;
 }
 .footer {
   background: #10367c;
