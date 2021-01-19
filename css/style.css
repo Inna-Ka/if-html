@@ -62,16 +62,31 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  position: relative;
+  margin-right: 24px;
 }
 
-a.withline::after {
-  display: none;
+.withline:hover::after {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 33px;
   content: "";
-  height: 4px;
-  width: 50px;
-  background-color: rgb(245, 189, 65);
+  height: 2px;
+  width: 100%;
+  background-color: #f5bd41;
+  animation-name: firstline;
+  animation-duration: 2s;
 }
 
+@keyframes firstline {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .icon-night {
   width: 30px;
   height: 30px;
@@ -190,6 +205,7 @@ input:not(:focus):valid ~ .labeltext {
   font-size: 24px;
   color: white;
   line-height: 28px;
+  cursor: pointer;
 }
 
 .bottom {
@@ -213,24 +229,46 @@ input:not(:focus):valid ~ .labeltext {
   max-width: 1232px;
   margin: 0 auto;
   padding: 120px 0px;
-  width: 100%;
+
+  position: relative;
 }
 .title {
   color: #383838;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 108px;
+}
+.centerline:hover:after {
+  display: block;
+  position: absolute;
+  left: 570px;
+  top: 180px;
+  content: "";
+  height: 4px;
+  width: 100px;
+  background-color: #f5bd41;
+  animation-name: secondline;
+  animation-duration: 1s;
+}
+@keyframes secondline {
+  from {
+    opacity: 0.5;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.underline {
+/* .underline {
   border: #f5bd41;
   background-color: #f5bd41;
   height: 4px;
   width: 100px;
   margin: 0 auto;
   margin-bottom: 80px;
-}
+} */
 
 .offers-list {
   display: flex;
@@ -261,7 +299,62 @@ input:not(:focus):valid ~ .labeltext {
   font-size: 24px;
   line-height: 28px;
 }
+.homes {
+  background-color: #eaf0f9;
+}
+.homes__offers {
+  justify-content: space-between;
+}
+.homesoffers_img {
+  width: 100%;
+  height: 296px;
+  padding-bottom: 24px;
+}
 
+.link_homesoffers {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3077c6;
+  text-decoration: none;
+}
+.homesoffers_signature {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #bfbfbf;
+  padding-top: 24px;
+}
+.homesoffers_arrow {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  fill: #e5e5e5;
+  background: #f3f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: -24px;
+  position: absolute;
+  bottom: 260px;
+}
+
+.polygon {
+  fill: none;
+  width: 7px;
+  height: 19px;
+}
 .footer {
   background: #10367c;
 }
@@ -545,6 +638,7 @@ a.link:hover {
   .container {
     padding-top: 24px;
     padding-bottom: 40px;
+    padding-left: 16px;
   }
 
   .title {
@@ -552,6 +646,7 @@ a.link:hover {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 28px;
+    margin-bottom: 35px;
   }
 
   .underline {
@@ -570,6 +665,58 @@ a.link:hover {
     font-size: 15px;
     line-height: 18px;
   }
+
+  .homesoffers_img {
+    width: 156px;
+    height: 155px;
+    padding-bottom: 8px;
+  }
+  .images_homesoffers {
+    width: 156px;
+    height: 155px;
+  }
+  .link_homesoffers {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(48, 119, 198, 1);
+    text-decoration: none;
+  }
+  .homesoffers_signature {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #bfbfbf;
+    padding-top: 4px;
+  }
+
+  .villa {
+    display: none;
+  }
+
+  .hostel {
+    display: none;
+  }
+  .arrow {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    fill: #e5e5e5;
+    background: #f3f3f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    position: absolute;
+    bottom: 125px;
+  }
+
   .footer1 {
     padding-bottom: 0;
   }
