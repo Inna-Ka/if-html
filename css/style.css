@@ -473,6 +473,7 @@ input:not(:focus):valid ~ .labeltext {
   align-items: center;
   justify-content: center;
   margin-right: 24px;
+  cursor: pointer;
 }
 .user {
   fill: #3077c6;
@@ -501,6 +502,7 @@ input:not(:focus):valid ~ .labeltext {
   font-size: 18px;
   line-height: 21px;
   color: #3077c6;
+  cursor: pointer;
 }
 .button_close {
   background: #bfbfbf;
