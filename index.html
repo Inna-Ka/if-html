@@ -67,6 +67,17 @@
           stroke-width="2"
         />
       </symbol>
+      <symbol id="user" viewBox="0 0 50 45">
+        <path
+          d="M28.652 34.748c0-2.056.511-4.03 1.473-5.79a54.137 54.137 0 00-2.782-1.472.362.362 0 01-.205-.338v-8.08a3.776 3.776 0 001.688-3.141V7.549A7.55 7.55 0 0021.276 0h-1.8a7.55 7.55 0 00-7.549 7.55v8.377c0 1.31.675 2.465 1.688 3.14v8.081a.38.38 0 01-.205.338c-1.155.562-6.75 3.386-11.937 7.651A4.04 4.04 0 000 38.277v5.739h32.979a10.52 10.52 0 01-.788-.726 12.01 12.01 0 01-3.54-8.542z"
+          d="M40.732 25.48c-5.114 0-9.267 4.154-9.267 9.268 0 5.115 4.153 9.268 9.267 9.268 5.115 0 9.268-4.153 9.268-9.268a9.266 9.266 0 00-9.268-9.267zM46.154 36.1h-4.071v4.07h-2.7V36.1H35.31v-2.701h4.071v-4.071h2.7v4.071h4.072v2.7z"
+        />
+      </symbol>
+      <symbol id="userplus" viewBox="0 0 50 45">
+        <path
+          d="M40.732 25.48c-5.114 0-9.267 4.154-9.267 9.268 0 5.115 4.153 9.268 9.267 9.268 5.115 0 9.268-4.153 9.268-9.268a9.266 9.266 0 00-9.268-9.267zM46.154 36.1h-4.071v4.07h-2.7V36.1H35.31v-2.701h4.071v-4.071h2.7v4.071h4.072v2.7z"
+        />
+      </symbol>
     </svg>
 
     <div class="options">
@@ -300,6 +311,141 @@
                 <use href="#polygon" />
               </svg>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best_destinations">
+      <div class="container">
+        <h2 class="title center">The best destinations</h2>
+        <div class="best_destinations_tabs">
+          <input
+            type="submit"
+            value="Regions"
+            class="best_destinations_tabs__tabs_buttons button_regions col-s-4"
+          />
+          <input
+            type="submit"
+            value="Cities"
+            class="best_destinations_tabs__tabs_buttons button_cities col-s-4"
+          />
+          <input
+            type="submit"
+            value="Places of interest"
+            class="best_destinations_tabs__tabs_buttons button_interestplaces col-s-4"
+          />
+          <input
+            type="submit"
+            value="Places"
+            class="best_destinations_tabs__tabs_buttons button_places col-s-4"
+          />
+        </div>
+        <div class="best_destinations_regions">
+          <div class="best_destinations_regions_Maldives col-s-6">
+            <div class="best_destinations_regions_img">
+              <img
+                src="./images/maldives.jpg"
+                alt="Maldives"
+                class="images_regions"
+              />
+              <button class="hidden_button button_sign_up">Book now</button>
+            </div>
+            <span>
+              <a href="#" class="link_homesoffers link_best_destinations"
+                >Maldives</a
+              >
+            </span>
+          </div>
+          <div class="best_destinations_regions_Spain col-s-6">
+            <div class="best_destinations_regions_img">
+              <img
+                src="./images/spain.jpg"
+                alt="Spain"
+                class="images_regions"
+              /><button class="hidden_button button_sign_up">Book now</button>
+            </div>
+            <span>
+              <a href="#" class="link_homesoffers link_best_destinations"
+                >Spain</a
+              >
+            </span>
+          </div>
+          <div class="best_destinations_regions_Norway col-s-6">
+            <div class="best_destinations_regions_img">
+              <img
+                src="./images/norway.jpg"
+                alt="Norway"
+                class="images_regions"
+              /><button class="hidden_button button_sign_up">Book now</button>
+            </div>
+            <span>
+              <a href="#" class="link_homesoffers link_best_destinations"
+                >Norway</a
+              >
+            </span>
+          </div>
+          <div class="best_destinations_regions_Island col-s-6">
+            <div class="best_destinations_regions_img">
+              <img
+                src="./images/island.jpg"
+                alt="Island"
+                class="images_regions"
+              /><button class="button_sign_up hidden_button">Book now</button>
+            </div>
+            <span>
+              <a href="#" class="link_homesoffers link_best_destinations"
+                >Island</a
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="best_destinations_arrow">
+          <svg class="polygon best_destinations_polygon">
+            <use href="#polygon" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign_up">
+      <div class="sign_up_settings">
+        <div class="sign_up_content">
+          <div class="user_sign_up">
+            <svg class="user">
+              <use href="#user" />
+              <use href="#userplus" />
+            </svg>
+          </div>
+          <div>
+            <span class="text_sign_up"
+              >Sign up and get 20% off your first booking</span
+            >
+            <div>
+              <input type="submit" value="Sign up" class="button_sign_up" />
+            </div>
+          </div>
+          <div class="button_close"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sign_up_mobile">
+      <div class="sign_up_settings">
+        <div class="sign_up_content col-s-12">
+          <div class="button_close"></div>
+          <div class="button_triphouse">
+            <button class="button_triphouse_blue"></button>
+            <svg class="triphouse_button_sign_up">
+              <use href="#triphouse" />
+            </svg>
+          </div>
+          <span class="text_sign_up text_sign_up_mobile"
+            >Sign up in the app and get 20% off your first booking</span
+          >
+          <div class="sign_up_install">
+            <a href="#" class="sign_up_install">Install</a>
           </div>
         </div>
       </div>
