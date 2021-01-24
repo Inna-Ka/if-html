@@ -564,10 +564,11 @@ input:not(:focus):valid ~ .labeltext {
 }
 .link_guests_reviews_place {
   font-weight: normal;
+  padding-bottom: 29px;
 }
 .raiting {
   background: #10367c;
-  font-family: Open Sans;
+  font-family: Open Sans, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -579,6 +580,9 @@ input:not(:focus):valid ~ .labeltext {
   text-align: center;
   margin-bottom: 12px;
   margin-left: 33px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .number_reviews {
   font-family: "Roboto", sans-serif;
