@@ -527,6 +527,91 @@ input:not(:focus):valid ~ .labeltext {
 .sign_up_mobile {
   display: none;
 }
+.guests_reviews_resort {
+  width: 400px;
+}
+.guests_reviews_resorts_text_Ubud_bali {
+  padding-bottom: 42px;
+}
+.guests_reviews_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guests_reviews_resorts_img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.guests_reviews_resorts_text {
+  background-color: #eaf0f9;
+  padding: 24px;
+}
+.raiting_hotels {
+  display: flex;
+  justify-content: space-between;
+}
+.link_guests_reviews {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077c6;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 16px;
+}
+.link_guests_reviews_place {
+  font-weight: normal;
+}
+.raiting {
+  background: #10367c;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 48px;
+  height: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-left: 33px;
+}
+.number_reviews {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bfbfbf;
+}
+.person_data {
+  display: flex;
+  margin-bottom: 24px;
+}
+.person {
+  width: 54px;
+  height: 54px;
+  fill: #bfbfbf;
+  padding-right: 22px;
+}
+.person_name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+  display: block;
+  margin-bottom: 8px;
+}
+.person_country {
+  color: #bfbfbf;
+}
+
 .footer {
   background: #10367c;
 }
