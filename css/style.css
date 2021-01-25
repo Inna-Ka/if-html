@@ -527,6 +527,133 @@ input:not(:focus):valid ~ .labeltext {
 .sign_up_mobile {
   display: none;
 }
+.guests_reviews_resort {
+  width: 400px;
+}
+
+.guests_reviews_content {
+  display: flex;
+  justify-content: space-between;
+}
+.title_guests_mobile {
+  display: none;
+}
+
+.guests_reviews_resorts_img {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+.images_resort {
+  width: 100%;
+  height: 100%;
+}
+.prices {
+  width: 376px;
+  height: 48px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(56, 56, 56, 0.7);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+.guests_reviews_resorts_text {
+  background-color: #eaf0f9;
+  padding: 24px;
+}
+.guests_reviews_resorts_text_Ubud_bali {
+  padding-bottom: 42px;
+}
+.raiting_hotels {
+  display: flex;
+  justify-content: space-between;
+}
+.link_guests_reviews {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3077c6;
+  text-decoration: none;
+  display: block;
+  padding-bottom: 16px;
+}
+.link_guests_reviews_place {
+  font-weight: normal;
+  padding-bottom: 29px;
+}
+.raiting {
+  background: #10367c;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 48px;
+  height: 32px;
+  text-align: center;
+  margin-bottom: 12px;
+  margin-left: 33px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.number_reviews {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bfbfbf;
+}
+.person_data {
+  display: flex;
+  margin-bottom: 24px;
+}
+.person {
+  width: 54px;
+  height: 54px;
+  fill: #bfbfbf;
+  padding-right: 22px;
+}
+.person_name {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+  display: block;
+  margin-bottom: 8px;
+}
+.person_country {
+  color: #bfbfbf;
+}
+.country_flag {
+  display: flex;
+}
+.flag {
+  width: 21px;
+  height: 19px;
+  margin-right: 5px;
+}
+.guest_reviews_arrow {
+  top: 180px;
+}
+.guets_navigation_mobile {
+  display: none;
+}
 .footer {
   background: #10367c;
 }
@@ -819,7 +946,7 @@ a.link:hover {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 28px;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .underline {
@@ -960,6 +1087,101 @@ a.link:hover {
 
   .images_regions:hover {
     display: none;
+  }
+  .King_Kong {
+    display: none;
+  }
+  .rokoko_hotel {
+    display: none;
+  }
+  .container_reviews {
+    background-color: #eaf0f9;
+  }
+  .title_guests {
+    display: none;
+  }
+  .title_guests_mobile {
+    display: block;
+  }
+  .images_resort {
+    width: 327px;
+    height: 325px;
+  }
+  .guests_reviews_resorts_img {
+    width: 327px;
+    height: 325px;
+    margin-bottom: 12px;
+  }
+  .prices {
+    display: none;
+  }
+  .guests_reviews_resorts_text {
+    padding: 0;
+  }
+  .raiting_hotels {
+    display: flex;
+    justify-content: space-between;
+  }
+  .link_guests_reviews {
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 8px;
+  }
+  .link_guests_reviews_place {
+    padding-bottom: 19px;
+  }
+  .raiting {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 8px;
+    margin-left: 33px;
+    width: 40px;
+    height: 26px;
+  }
+  .number_reviews {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .person_data {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .person {
+    width: 44px;
+    height: 44px;
+    padding-right: 12px;
+  }
+  .person_name {
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 4px;
+  }
+  .country_flag {
+    display: flex;
+  }
+  .flag {
+    width: 17px;
+    height: 15px;
+    margin-right: 3px;
+  }
+  .guest_reviews_arrow {
+    display: none;
+  }
+  .guets_navigation_mobile {
+    display: flex;
+    padding-top: 32px;
+    justify-content: center;
+  }
+  .navigation_circle {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #333333;
+    border-radius: 50%;
+    fill: #e5e5e5;
+    margin-right: 8px;
+  }
+  .navigation_circle_black {
+    background-color: #333333;
   }
   .sign_up {
     display: none;
