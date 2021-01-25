@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite">
@@ -82,8 +87,7 @@
         <path
           d="M27 .333C12.28.333.333 12.28.333 27 .333 41.72 12.28 53.667 27 53.667c14.72 0 26.667-11.947 26.667-26.667C53.667 12.28 41.72.333 27 .333zm0 8c4.427 0 8 3.574 8 8 0 4.427-3.573 8-8 8a7.99 7.99 0 01-8-8c0-4.426 3.573-8 8-8zM27 46.2c-6.667 0-12.56-3.413-16-8.587.08-5.306 10.667-8.213 16-8.213 5.307 0 15.92 2.907 16 8.213-3.44 5.174-9.333 8.587-16 8.587z"
         />
-      </symbol>
-    </svg>
+          </svg>
 
     <div class="options">
       <div class="option1">
@@ -437,16 +441,18 @@
     </section>
 
     <section class="guests_reviews">
-      <div class="container">
-        <h2 class="title center centerline">Guests reviews</h2>
+      <div class="container container_reviews">
+        <h2 class="title center centerline title_guests">Guests reviews</h2>
+        <h2 class="title center title title_guests_mobile"> Reviews</h2>
         <div class="guests_reviews_content">
-          <div class="guests_reviews_resort Ubud_bali">
+          <div class="guests_reviews_resort Ubud_bali col-s-12">
             <div class="guests_reviews_resorts_img">
               <img
                 src="./images/ubud_bali_resort.jpg"
                 alt="Ubud Bali Resort"
-                class="images_regions"
-              /><button class="hidden_button button_sign_up">Book now</button>
+                class="images_resort"
+              />
+              <div class="prices">From 250 USD</div>
             </div>
             <div
               class="guests_reviews_resorts_text guests_reviews_resorts_text_Ubud_bali"
@@ -481,7 +487,12 @@
                   </div>
                   <div>
                     <p class="person_name">Hanna Ivanova</p>
-                    <p class="person_name person_country">Ukraine</p>
+                    <div class="country_flag">
+                      <div>
+                        <img src="./images/ua.jpg" alt="Ukraine" class="flag" />
+                      </div>
+                      <p class="person_name person_country">Ukraine</p>
+                    </div>
                   </div>
                 </div>
                 <p class="person_name">
@@ -499,8 +510,9 @@
               <img
                 src="./images/king_kong_hostel.jpg"
                 alt="King Kong Hostel"
-                class="images_regions"
-              /><button class="hidden_button button_sign_up">Book now</button>
+                class="images_resort"
+              />
+              <div class="prices">From 40 USD</div>
             </div>
             <div class="guests_reviews_resorts_text">
               <div class="raiting_hotels">
@@ -531,7 +543,12 @@
                   </div>
                   <div>
                     <p class="person_name">Adam Smith</p>
-                    <p class="person_name person_country">USA</p>
+                    <div class="country_flag">
+                      <div>
+                        <img src="./images/us.jpg" alt="USA" class="flag" />
+                      </div>
+                      <p class="person_name person_country">USA</p>
+                    </div>
                   </div>
                 </div>
                 <p class="person_name">
@@ -549,8 +566,9 @@
               <img
                 src="./images/rokoko_hotel.jpg"
                 alt="Rokoko Hotel"
-                class="images_regions"
-              /><button class="hidden_button button_sign_up">Book now</button>
+                class="images_resort"
+              />
+              <div class="prices">From 100 USD</div>
             </div>
             <div class="guests_reviews_resorts_text">
               <div class="raiting_hotels">
@@ -581,7 +599,12 @@
                   </div>
                   <div>
                     <p class="person_name">Anika Messer</p>
-                    <p class="person_name person_country">Germany</p>
+                    <div class="country_flag">
+                      <div>
+                        <img src="./images/de.jpg" alt="Germany" class="flag" />
+                      </div>
+                      <p class="person_name person_country">Germany</p>
+                    </div>
                   </div>
                 </div>
                 <p class="person_name">
@@ -591,71 +614,30 @@
                   definitely stay at this location during my next stay in
                   Marocco.
                 </p>
+
               </div>
+                          </div>
+            
+          </div>
+          <div class="homesoffers_arrow ">
+            <div class="arrow guest_reviews_arrow">
+              <svg class="polygon">
+                <use href="#polygon" />
+              </svg>
             </div>
           </div>
+                 </div>
+                 
+          <div class="guets_navigation_mobile">
+            <div class="navigation_circle navigation_circle_black">                         </div>
+            <div class="navigation_circle">                        </div>
+            <div class="navigation_circle">                         </div>
+            <div class="navigation_circle">                        </div>
+              </div>
         </div>
       </div>
     </section>
-    <section class="sign_up_mobile">
-      <div class="sign_up_settings">
-        <div class="sign_up_content col-s-12">
-          <div class="button_close"></div>
-          <div class="button_triphouse">
-            <button class="button_triphouse_blue"></button>
-            <svg class="triphouse_button_sign_up">
-              <use href="#triphouse" />
-            </svg>
-          </div>
-          <span class="text_sign_up text_sign_up_mobile"
-            >Sign up in the app and get 20% off your first booking</span
-          >
-          <div class="sign_up_install">
-            <a href="#" class="sign_up_install">Install</a>
-          </div>
-          <div class="guests_reviews_resort Ubud_bali">
-            <div class="guests_reviews_resorts_img">
-              <img
-                src="./images/ubud_bali_resort.jpg"
-                alt="Ubud Bali Resort"
-                class="images_regions"
-              /><button class="hidden_button button_sign_up">Book now</button>
-            </div>
-            <div>
-              <span>
-                <a href="#" class="link_homesoffers link_guests_reviews"
-                  >Ubud Bali Resort&SPA</a
-                >
-              </span>
-              <div class="homesoffers_signature">Bali, Indonesia</div>
-              <div class="score">
-                <p class="raiting">9,4</p>
-                <span class="number_reviews">1324 reviews</span>
-              </div>
-            </div>
-            <div class="text_review">
-              <div class="">
-                <div>
-                  <svg class="persom">
-                    <use href="#person" />
-                  </svg>
-                </div>
-                <div>
-                  <span class="text_sign_up">Hanna Ivanova</span>
-                  <span class="text_sign_up">Ukraine</span>
-                </div>
-              </div>
-              <p>
-                Great location, really pleasant and clean rooms, but the thing
-                that makes this such a good place to stay are the staff. All of
-                the people are incredibly helpful and generous with their time
-                and advice.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <section class="sign_up_mobile">
       <div class="sign_up_settings">
         <div class="sign_up_content col-s-12">
