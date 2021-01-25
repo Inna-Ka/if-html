@@ -530,9 +530,7 @@ input:not(:focus):valid ~ .labeltext {
 .guests_reviews_resort {
   width: 400px;
 }
-.guests_reviews_resorts_text_Ubud_bali {
-  padding-bottom: 42px;
-}
+
 .guests_reviews_content {
   display: flex;
   justify-content: space-between;
@@ -570,6 +568,9 @@ input:not(:focus):valid ~ .labeltext {
 .guests_reviews_resorts_text {
   background-color: #eaf0f9;
   padding: 24px;
+}
+.guests_reviews_resorts_text_Ubud_bali {
+  padding-bottom: 42px;
 }
 .raiting_hotels {
   display: flex;
